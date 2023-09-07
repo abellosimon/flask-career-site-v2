@@ -1,31 +1,11 @@
- h1{
-        font-size: 40px;
-        font-family: Roboto;
-        font-weight: normal;
-        color: rgb(50,50,50);
-      
-        text-align: center;
-      }
-       h2{
-        font-size: 32px;
-        font-family: Roboto;
-        font-weight: normal;
-        color: rgb(100,100,100);
-        text-align: center;
-      }
-      .bodytext{
-        font-family: Roboto;
-        color: rgb(80,80,80);
-        text-align: center;
-      }
+
       #banner {height:360px;
                width: 100%;
                object-fit: cover;
-               
-        
       }
-       #container {max-width: 720px;
-                   margin: 0 auto;
-              
-                            
+      h4{color: rgb(120,120,120);
+         margin-bottom:4px;
       }
+    #jobs_container{margin-bottom:16px;
+                    padding-bottom:8px;
+    }
