@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/static/style.css"> 
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container">
     <h1 class="text-center mt-2 mb-4">{{company_name}} Career Site</h1>
     <img class="img-fluid" id="banner" src="/static/banner.jpg" > 
@@ -27,5 +28,6 @@
       <p class="mt-4">Copyright 2023</p>
     </div>
       </div>
+    {% include 'footer.html' %}
   </body>
 </html>
