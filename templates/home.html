@@ -11,11 +11,18 @@
   </head>
   <body>
     {% include 'nav.html' %}
+   <img class="img-fluid" id="banner" src="/static/banner.jpg" > 
     <div class="container">
     <h1 class="text-center mt-2 mb-4">{{company_name}} Career Site</h1>
-    <img class="img-fluid" id="banner" src="/static/banner.jpg" > 
-    <h2 h1 class="text-center mt-2 mb-4">About Career Site</h2>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus quam. Ut quis urna vel quam tempus lobortis quis at lacus. Donec imperdiet nibh non commodo sollicitudin. In congue leo et tincidunt sodales. Maecenas finibus consectetur felis, eu semper felis. Quisque nec sollicitudin ex, at pulvinar magna. Sed sagittis sodales mauris. Sed malesuada massa pulvinar arcu tincidunt, aliquam fermentum dui sollicitudin. Donec erat nibh, laoreet ut feugiat quis, laoreet sit amet odio. Sed sit amet suscipit dolor. In molestie nisl sed enim facilisis, id sodales eros porta.</p>
+    <div class="row" style="margin-botton:16px">
+      <div class="col-md-6">
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus quam. Ut quis urna vel quam tempus lobortis quis at lacus. Donec imperdiet nibh non commodo sollicitudin. In congue leo et tincidunt sodales. Maecenas finibus consectetur felis, eu semper felis. Quisque nec sollicitudin ex, at pulvinar magna. Sed sagittis sodales mauris. Sed malesuada massa pulvinar arcu tincidunt, aliquam fermentum dui sollicitudin. Donec erat nibh, laoreet ut feugiat quis, laoreet sit amet odio. Sed sit amet suscipit dolor. In molestie nisl sed enim facilisis, id sodales eros porta.
+      </p>
+        </div>
+        <div class="d-none d-nd-block col-6">
+      <img src="/static/people.jpg" style="height:360px;border-radius:4px;">
+           </div>
+    </div>
     <h2 class="text-center mt-2 mb-4">Job Openings</h2>
     <p>
         <!--templating syntaxt from flask to add dynamic data into html  -->
@@ -24,8 +31,7 @@
       {% endfor %}
     </p>
     <div class="text-center">
-      <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p class="mt-4">Copyright 2023</p>
+      <a href="mailto:simon.abello@test.com?subject=Question%20about%20Jobs&body=My%20Name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Question%3A%20%3Center%20question%20here%3E" class="btn btn-primary btn-lg">Contact Us</a>
     </div>
       </div>
     {% include 'footer.html' %}
