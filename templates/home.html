@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flask Career Site Demo</title>
-    <link rel="shortcut icon" href='/static/favicon.ico'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    {% include 'bootstrap.html' %}
     <link rel="stylesheet" href="/static/style.css"> 
   </head>
   <body>
     {% include 'nav.html' %}
    <img class="img-fluid" id="banner" src="/static/banner.jpg" > 
     <div class="container">
-    <h1 class="text-center mt-2 mb-4">{{company_name}} Career Site</h1>
+    <h1 class="text-center mt-2 mb-4">Simon's Career Site</h1>
     <div class="row" style="margin-botton:16px">
       <div class="col-md-6">
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus quam. Ut quis urna vel quam tempus lobortis quis at lacus. Donec imperdiet nibh non commodo sollicitudin. In congue leo et tincidunt sodales. Maecenas finibus consectetur felis, eu semper felis. Quisque nec sollicitudin ex, at pulvinar magna. Sed sagittis sodales mauris. Sed malesuada massa pulvinar arcu tincidunt, aliquam fermentum dui sollicitudin. Donec erat nibh, laoreet ut feugiat quis, laoreet sit amet odio. Sed sit amet suscipit dolor. In molestie nisl sed enim facilisis, id sodales eros porta.
