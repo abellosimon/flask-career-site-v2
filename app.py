@@ -1,37 +1,20 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, jsonify, render_template
+
+from database import load_jobs_from_db
 
 app = Flask(__name__)
-
-JOBS = [{
-    'id': 1,
-    'title': 'Data Analyst',
-    'location': 'Rotterdam, Netherlands',
-    'salary': 'EUR 80,000'
-}, {
-    'id': 2,
-    'title': 'Data Scientist',
-    'location': 'Amsterdam, Netherlands',
-}, {
-    'id': 3,
-    'title': 'Frontend Engineer',
-    'location': 'Remote',
-    'salary': 'EUR 100,000'
-}, {
-    'id': 4,
-    'title': 'Backend Engineer',
-    'location': 'San Francisco, USA',
-    'salary': 'USD 250,000'
-}]
 
 
 @app.route("/")
 def hello_world():
-  return render_template('home.html', jobs=JOBS, company_name='Simon')
+  jobs_db = load_jobs_from_db()
+  return render_template('home.html', jobs=jobs_db, company_name='Simon')
 
 
-@app.route("/api//jobs")
+@app.route("/api/jobs")
 def list_jobs():
-  return jsonify(JOBS)
+  jobs_db = load_jobs_from_db()
+  return jsonify(jobs_db)
 
 
 #DONE: Learn to change favicon icon
